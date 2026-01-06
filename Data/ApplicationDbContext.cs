@@ -1,4 +1,5 @@
 ﻿
+using HSEPLUS.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +11,8 @@ namespace HSEPLUS.Data
             : base(options)
         {
         }
+
+        public DbSet<User> Users { get; set; }
 
 
     }
