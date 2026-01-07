@@ -8,12 +8,12 @@
         <div class="page-header">
             <div class="page-block">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="javascript: void(0)">Online Courses</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Teacher List</li>
+                    <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+                    @* <li class="breadcrumb-item"><a href="javascript: void(0)">Online Courses</a></li> *@
+                    <li class="breadcrumb-item" aria-current="page">لیست کارکنان</li>
                 </ul>
                 <div class="page-header-title">
-                    <h2 class="mb-0">Teacher List</h2>
+                    <h2 class="mb-0">لیست کارکنان</h2>
                 </div>
             </div>
         </div>
@@ -26,8 +26,7 @@
                         <div class="sm:flex items-center justify-between">
                             <h5 class="mb-3 sm:mb-0">Teacher list</h5>
                             <div>
-                                <a href="../admins/course-teacher-apply.html" class="btn btn-outline-secondary mr-1">Apply Teacher List</a>
-                                <a href="../admins/course-teacher-add.html" class="btn btn-primary">Add Teacher</a>
+                                <a asp-page="/Admin/Users/Create" class="btn btn-primary">اضافه کردن کاربر</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +63,7 @@
                                             <a href="#" class="w-8 h-8 rounded-xl inline-flex items-center justify-center btn-link-secondary">
                                                 <i class="ti ti-eye text-xl leading-none"></i>
                                             </a>
-                                            <a href="#" class="w-8 h-8 rounded-xl inline-flex items-center justify-center btn-link-secondary">
+                                            <a asp-page="/Admin/Users/Edit" asp-route-id="@item.id" class="w-8 h-8 rounded-xl inline-flex items-center justify-center btn-link-secondary">
                                                 <i class="ti ti-edit text-xl leading-none"></i>
                                             </a>
                                             <a href="#" class="w-8 h-8 rounded-xl inline-flex items-center justify-center btn-link-secondary">
