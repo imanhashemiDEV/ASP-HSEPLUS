@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HSEPLUS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e27046f3fe92b89830d3514bbefee403c20daadc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29b549d046f0babe9ef078f3771e34c1b6fcdcd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("HSEPLUS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HSEPLUS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

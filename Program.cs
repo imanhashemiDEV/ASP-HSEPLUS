@@ -9,16 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddDefaultTokenProviders()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+//builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+//    .AddDefaultTokenProviders()
+//    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Login";
-    options.LogoutPath = "/Logout";
-    options.AccessDeniedPath = "/AccessDenied";
-});
+//builder.Services.ConfigureApplicationCookie(options =>
+//{
+//    options.LoginPath = "/Login";
+//    options.LogoutPath = "/Logout";
+//    options.AccessDeniedPath = "/AccessDenied";
+//});
 
 
 // Add services to the container.

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace HSEPLUS.Pages.Admin.Users
 {
@@ -18,9 +19,9 @@ namespace HSEPLUS.Pages.Admin.Users
 
         public IList<User> Users { get; set; } = default!;
 
-        public async Task OnGetAsync()
+        public async Task OnGet()
         {
-            Users = await _context.Users.OrderByDescending(c=>c.id).Take(10).ToListAsync();
+            Users = await _context.Users.OrderByDescending(c=>c.updated_at).Take(10).ToListAsync();
         }
     }
 }
