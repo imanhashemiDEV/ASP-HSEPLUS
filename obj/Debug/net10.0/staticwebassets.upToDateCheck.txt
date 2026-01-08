@@ -459,15 +459,7 @@ wwwroot\panel\images\slider\img-slide-5.jpg
 wwwroot\panel\images\slider\img-slide-6.jpg
 wwwroot\panel\images\slider\img-slide-7.jpg
 wwwroot\panel\images\user\avatar-1.jpg
-wwwroot\panel\images\user\avatar-10.jpg
-wwwroot\panel\images\user\avatar-2.jpg
-wwwroot\panel\images\user\avatar-3.jpg
-wwwroot\panel\images\user\avatar-4.jpg
-wwwroot\panel\images\user\avatar-5.jpg
-wwwroot\panel\images\user\avatar-6.jpg
 wwwroot\panel\images\user\avatar-7.jpg
-wwwroot\panel\images\user\avatar-8.jpg
-wwwroot\panel\images\user\avatar-9.jpg
 wwwroot\panel\images\widget\img-acitivity-3.svg
 wwwroot\panel\images\widget\img-card-1.png
 wwwroot\panel\images\widget\img-card-2.png

@@ -13,6 +13,10 @@ namespace HSEPLUS.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<User_info> User_infos { get; set; } = default!;
+        public DbSet<Organization> Organizations { get; set; } = default!;
+        public DbSet<Occupation> Occupations { get; set; } = default!;
+        public DbSet<Workplace> Workplaces { get; set; } = default!;
 
 
     }

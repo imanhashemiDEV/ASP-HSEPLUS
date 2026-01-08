@@ -1,0 +1,50 @@
+﻿@page
+@model HSEPLUS.Pages.Admin.Occupation.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Occupation</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupation.title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Occupation.title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupation.occupation_code)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Occupation.occupation_code)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupation.occupation_type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Occupation.occupation_type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupation.created_at)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Occupation.created_at)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Occupation.updated_at)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Occupation.updated_at)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Occupation.id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

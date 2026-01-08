@@ -57,21 +57,13 @@
     <!-- [ Sidebar Menu ] start -->
     <nav class="pc-sidebar">
         <div class="navbar-wrapper">
-            <div class="flex items-center px-6 py-4 m-header h-header-height">
-                <a href="#" class="flex items-center gap-3 b-brand">
-                    <!-- ========   Change your logo from here   ============ -->
-                    <img src="~/panel/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo" />
-                    <span class="rounded-full badge bg-success-500/10 text-success-500 theme-version">v1.1.0</span>
-                </a>
-            </div>
             <div class="navbar-content h-[calc(100vh_-_74px)] py-2.5">
                 <div class="card pc-user-card mx-[15px] mb-[15px] bg-theme-sidebaruserbg dark:bg-themedark-sidebaruserbg">
                     <div class="card-body !p-5">
                         <div class="flex items-center">
-                            <img class="shrink-0 w-[45px] h-[45px] rounded-full" src="~/panel/images/user/avatar-1.jpg" alt="user-image" />
+                            <img class="shrink-0 h-[45px] rounded-full" src="~/panel/images/user/avatar-7.jpg" alt="user-image" />
                             <div class="ml-4 mr-2 grow">
                                 <h6 class="mb-0">سید ایمان هاشمی</h6>
-                                <small>مدیر ارشد</small>
                             </div>
                             <a class="inline-flex shrink-0 btn btn-icon btn-link-secondary" data-pc-toggle="collapse" href="#pc_sidebar_userlink">
                                 <svg class="pc-icon w-[22px] h-[22px]">
@@ -106,6 +98,9 @@
                         </a>
                         <ul class="pc-submenu">
                             <li class="pc-item"><a class="pc-link" asp-page="/Admin/Users/Index">لیست کارکنان</a></li>
+                            <li class="pc-item"><a class="pc-link" asp-page="/Admin/Organizations/Index">سازمان</a></li>
+                            <li class="pc-item"><a class="pc-link" asp-page="/Admin/Workplaces/Index">محل های کار</a></li>
+                            <li class="pc-item"><a class="pc-link" asp-page="/Admin/Occupations/Index">سمت ها</a></li>
                         </ul>
                     </li>
 

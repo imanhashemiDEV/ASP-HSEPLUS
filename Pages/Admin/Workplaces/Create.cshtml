@@ -1,0 +1,50 @@
+﻿@page
+@model HSEPLUS.Pages.Admin.Workplace.CreateModel
+
+        @{
+        ViewData["Title"] = "Create";
+            Layout = "~/Pages/Shared/_Layout.cshtml";
+        }
+        
+        <h1>Create</h1>
+        
+    <h4>Workplace</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Workplace.title" class="control-label"></label>
+                <input asp-for="Workplace.title" class="form-control" />
+                <span asp-validation-for="Workplace.title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Workplace.created_at" class="control-label"></label>
+                <input asp-for="Workplace.created_at" class="form-control" />
+                <span asp-validation-for="Workplace.created_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Workplace.updated_at" class="control-label"></label>
+                <input asp-for="Workplace.updated_at" class="form-control" />
+                <span asp-validation-for="Workplace.updated_at" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Workplace.organization_id" class="control-label"></label>
+                <input asp-for="Workplace.organization_id" class="form-control" />
+                <span asp-validation-for="Workplace.organization_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

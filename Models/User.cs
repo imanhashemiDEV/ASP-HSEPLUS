@@ -34,5 +34,8 @@ namespace HSEPLUS.Models
         [Display(Name = "تاریخ بروزرسانی")]
         public DateTime updated_at { get; set; } = DateTime.Now;
 
+      // relations
+
+        public User_info user_infos;
     }
 }
